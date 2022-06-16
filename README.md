@@ -16,7 +16,7 @@ var config = {
             module: 'MMM-JsonData',
 	    position: 'top_left',
             config: {
-                updateInterval: 1000//Refresh every second
+                updateInterval: 1000,//Refresh every second
 		fileName: "modules/MMM-JsonData/data.json"//Your json file path
             }
         }
