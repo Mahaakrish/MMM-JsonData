@@ -2,7 +2,9 @@
 
 This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
 
-Todo: Insert description here!
+It was mainly developed to fetch data from a local .json file.
+
+It fetches the key-value and display it in a table format.
 
 ## Using the module
 
@@ -12,8 +14,10 @@ var config = {
     modules: [
         {
             module: 'MMM-JsonData',
+	    position: 'top_left',
             config: {
-                // See below for configurable options
+                updateInterval: 1000//Refresh every second
+		fileName: "modules/MMM-JsonData/data.json"//Your json file path
             }
         }
     ]
@@ -24,5 +28,5 @@ var config = {
 
 | Option           | Description
 |----------------- |-----------
-| `option1`        | *Required* DESCRIPTION HERE
-| `option2`        | *Optional* DESCRIPTION HERE TOO <br><br>**Type:** `int`(milliseconds) <br>Default 60000 milliseconds (1 minute)
+| `updateInterval` | Interval between updates (in millis)
+| `fileName`       | Your json file path
